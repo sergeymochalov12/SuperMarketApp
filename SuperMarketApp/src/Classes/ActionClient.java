@@ -1,6 +1,7 @@
 package Classes;
 
 import java.util.Objects;
+
 /*
 Класс описывающий акционного клиента
  */
@@ -15,35 +16,39 @@ public class ActionClient extends Actor {
     private int id;
     private static int maxClientCount = 2;
 
-/*
-Конструктор. Принимает поля
-Имя,
-Наименование акции для конкретного клиента
-id клиента
- */
+    /*
+    Конструктор. Принимает поля
+    Имя,
+    Наименование акции для конкретного клиента
+    id клиента
+     */
     public ActionClient(String name, String nameAction, int id) {
         super(name);
         this.nameAction = nameAction;
         this.id = id;
     }
+
     /*
     гетер для получения наименования акции
      */
     public String getNameAction() {
         return nameAction;
     }
+
     /*
     Сеттер для установления имени акции
      */
     public void setNameAction(String nameAction) {
         this.nameAction = nameAction;
     }
+
     /*
     Геттер для получения id клиента
      */
     public int getId() {
         return id;
     }
+
     /*
         Сеттер для установки id клиента
          */
@@ -51,10 +56,15 @@ id клиента
         this.id = id;
     }
 
+
+    /*
+       Сеттер для установки имени клиента
+        */
     @Override
     public void setName(String name) {
+        super.name = name;
+    }
 
-            }
 
     @Override
     public String getName() {
@@ -63,7 +73,7 @@ id клиента
 
     @Override
     public void returnOrder(int idOrder) {
-        System.out.println("Заказ" + getName() +"№ "+  idOrder + " отменен");
+        System.out.println("Заказ" + getName() + "№ " + idOrder + " отменен");
 
     }
 

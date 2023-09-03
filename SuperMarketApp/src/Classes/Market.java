@@ -2,18 +2,18 @@ package Classes;
 
 import java.util.List;
 import java.util.ArrayList;
-
 import Interfaces.*;
-
 import Interfaces.iMarketBehaviour;
 import Interfaces.iQueueBehaviour;
 
+
 public class Market implements iMarketBehaviour, iQueueBehaviour {
 
-    private List<iActorBehaviour> queue;
+    private List<iActorBehaviour> queue;// создается список queue - очередь
 
     public Market() {
-        this.queue = new ArrayList<iActorBehaviour>();
+
+        this.queue = new ArrayList<iActorBehaviour>(); // конструктор для объекта Market
     }
 
     @Override

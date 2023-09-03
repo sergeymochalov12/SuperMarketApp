@@ -3,6 +3,7 @@ import Interfaces.iActorBehaviour;
 
 public class App {
     public static void main(String[] args) throws Exception {
+
         Market magnit = new Market();
 
         iActorBehaviour client1 = new OrdinaryClient("boris");

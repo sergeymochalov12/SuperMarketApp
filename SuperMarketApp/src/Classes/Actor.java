@@ -12,11 +12,8 @@ public  abstract class Actor implements  iActorBehaviour, iReturnOrder {
     public Actor(String name) {
         this.name = name;
     }
-
     abstract public void setName(String name);
-
     abstract public String getName();
-
     abstract  public  void returnOrder(int idOrder);
 
 
